@@ -1,0 +1,118 @@
+{% extends '/main/homepaciente.html' %}
+{% block body %}
+<!-- Latest compiled and minified JavaScript -->
+<div class="form-body">
+    <div class="row">
+        <div class="form-holder">
+            <div class="form-content">
+                <div class="form-items">
+                    <h3>Bienvenido, agende su cita hoy</h3>
+                    <p>Llene el formulario.</p>
+                    <form class="requires-validation" novalidate>
+                        <div class="col-md-12">
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="name"
+                                placeholder="Nombre"
+                                required
+                            >
+                            <div class="valid-feedback">Nombre es valido!</div>
+                            <div class="invalid-feedback">Campo nombre no es valido!</div>
+                        </div>
+                        <div class="col-md-12">
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="email"
+                                placeholder="Especialidad"
+                                required
+                            >
+                            <div class="valid-feedback">Especialidad es valido!</div>
+                            <div class="invalid-feedback">Especialidad no puede estar en blanco!</div>
+                        </div>
+                        <div class="col-md-12">
+                            <select class="form-select mt-3" required>
+                                <option selected disabled value="">Odontologo</option>
+                                <option value="jweb">Junior Web Developer</option>
+                                <option value="sweb">Senior Web Developer</option>
+                                <option value="pmanager">Project Manager</option>
+                            </select>
+                            <div class="valid-feedback">Has seleccionado un Odontologo!</div>
+                            <div class="invalid-feedback">Porfavor selecciona un Odontologo!</div>
+                        </div>
+                        <br>
+                        <div class="pos">
+                            <div class="card">
+                                <h3 class="title">Frachesco Virgollini </h3>
+                                <div class="bar">
+                                    <div class="emptybar"></div>
+                                    <div class="filledbar"></div>
+                                </div>
+                                <div class="circle">
+                                    <img class="img" src="../../static/images/pic4.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3 class="title">Edna Moda</h3>
+                                <div class="bar">
+                                    <div class="emptybar"></div>
+                                    <div class="filledbar"></div>
+                                </div>
+                                <div class="circle">
+                                    <img class="img" src="../../static/images/pic1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3 class="title">Carter Jhonsons</h3>
+                                <div class="bar">
+                                    <div class="emptybar"></div>
+                                    <div class="filledbar"></div>
+                                </div>
+                                <div class="circle">
+                                    <img class="img" src="../../static/images/pic2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3 class="title">Natalia Ponce</h3>
+                                <div class="bar">
+                                    <div class="emptybar"></div>
+                                    <div class="filledbar"></div>
+                                </div>
+                                <div class="circle">
+                                    <img class="img" src="../../static/images/pic3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-md-12">
+                            <input
+                                class="form-control"
+                                type="date"
+                                name="password"
+                                placeholder="Fecha"
+                                required
+                            >
+                            <div class="valid-feedback">Fecha es valida!</div>
+                            <div class="invalid-feedback">El campo fecha no puede estar!</div>
+                        </div>
+                        <div class="col-md-12">
+                            <select class="form-select mt-3" required>
+                                <option selected disabled value="">Sede</option>
+                                <option value="jweb">Junior Web Developer</option>
+                                <option value="sweb">Senior Web Developer</option>
+                                <option value="pmanager">Project Manager</option>
+                            </select>
+                            <div class="valid-feedback">You selected a position!</div>
+                            <div class="invalid-feedback">Please select a position!</div>
+                        </div>
+                        <div class="form-button mt-3">
+                            <button id="submit" type="submit" class="btn btn-primary">Agendar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

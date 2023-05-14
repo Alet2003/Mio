@@ -1,0 +1,110 @@
+{% extends '/main/homepaciente.html' %}
+{% block body %}
+<!-- Latest compiled and minified JavaScript -->
+<div class="form-body">
+    <div class="row">
+        <div class="form-holder">
+            <div class="form-content">
+                <div class="form-items">
+                    <h3>Bienvenido, agende su cita hoy</h3>
+                    <p>Llene el formulario.</p>
+                    <form class="requires-validation" novalidate>
+                        <div class="col-md-12">
+                            <input
+                                class="form-control"
+                                type="number"
+                                name="cedula"
+                                placeholder="Cedula"
+                                required
+                            >
+                            <div class="valid-feedback">Nombre es valido!</div>
+                            <div class="invalid-feedback">Campo nombre no es valido!</div>
+                        </div>
+                    <form class="requires-validation" novalidate>
+                        <div class="col-md-12">
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="name"
+                                placeholder="Nombre"
+                                required
+                            >
+                            <div class="valid-feedback">Nombre es valido!</div>
+                            <div class="invalid-feedback">Campo nombre no es valido!</div>
+                        </div>
+                        <div class="col-md-12">
+                            <input
+                                class="form-control"
+                                type="email"
+                                name="email"
+                                placeholder="correo"
+                                required
+                            >
+                            <div class="valid-feedback">Correo es valido!</div>
+                            <div class="invalid-feedback">correo no puede estar en blanco!</div>
+                        </div>
+                        <div class="col-md-12">
+                            <input
+                                class="form-control"
+                                type="date"
+                                name="fecha"
+                                placeholder="Fecha de nacimiento"
+                                required
+                            >
+                            <div class="valid-feedback">Fecha es valida!</div>
+                            <div class="invalid-feedback">El campo fecha no puede estar vacio!</div>
+                        </div>
+                        <div class="col-md-12">
+                            <input
+                                class="form-control"
+                                type="password"
+                                name="password"
+                                placeholder="Contraseña"
+                                required
+                            >
+                            <div class="valid-feedback">Contraseña es valida!</div>
+                            <div class="invalid-feedback">El campo contraseña no puede estar vacio!</div>
+                        </div>
+                        <div class="col-md-12">
+                            <input
+                                class="form-control"
+                                type="tel"
+                                name="telefono"
+                                pattern="[0-9]{3}-[0-9]{2}{3}-[0-9]{3}{3}{3}{3}"
+                                placeholder="Telefono"
+                                required
+                            >
+                            <div class="valid-feedback">Telefono es valida!</div>
+                            <div class="invalid-feedback">El campo telefono no puede estar vacio!</div>
+                        </div>
+                        <div class="col-md-12">
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="direccion"
+                                placeholder="Direccion"
+                                required
+                            >
+                            <div class="valid-feedback">Direccion es valida!</div>
+                            <div class="invalid-feedback">El campo direccion no puede estar!</div>
+                        </div>
+                        <div class="col-md-12">
+                            <select class="form-select mt-3" required>
+                                <option selected disabled value="">Sede</option>
+                                <option value="jweb">Junior Web Developer</option>
+                                <option value="sweb">Senior Web Developer</option>
+                                <option value="pmanager">Project Manager</option>
+                            </select>
+                            <div class="valid-feedback">You selected a position!</div>
+                            <div class="invalid-feedback">Please select a position!</div>
+                        </div>
+                        <div class="form-button mt-3">
+                            <button id="submit" type="submit" class="btn btn-primary">Agendar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
